@@ -1,0 +1,75 @@
+##############################################################################
+###
+### Fill only used variables!
+###
+### Config file is loaded AFTER command line processing, so it will overwrite
+### command line parameters
+###
+### @author     Knut Kohl <github@knutkohl.de>
+### @copyright  2016 Knut Kohl
+### @license    MIT License (MIT) http://opensource.org/licenses/MIT
+### @version    1.0.0
+##############################################################################
+
+##############################################################################
+### The user/group key (not e-mail address) of your user (or you),
+### viewable when logged into our dashboard
+###
+#USER=""
+
+##############################################################################
+### Your application's API token
+###
+#TOKEN=""
+
+##############################################################################
+### Your user's device name to send the message directly to that device,
+### rather than all of the user's
+###
+#DEVICE=""
+
+##############################################################################
+### Your message's title, otherwise your app's name is used
+###
+#TITLE=""
+
+##############################################################################
+### Send as -2 to generate no notification/alert, -1 to always send as a quiet
+### notification, 1 to display as high-priority and bypass the user's quiet
+### hours, or 2 to also require confirmation from the user
+###
+#PRIORITY=""
+
+##############################################################################
+### A supplementary URL to show with your message
+###
+#URL=""
+
+##############################################################################
+### -A title for your supplementary URL, otherwise just the URL is shown
+###
+#URLTITLE=""
+
+##############################################################################
+### The name of one of the sounds supported by device clients to override
+### the user's default sound choice
+###
+#SOUND=""
+
+##############################################################################
+### How often (in seconds) the Pushover servers will send the same notification
+### to the user
+###
+#RETRY=""
+
+##############################################################################
+### How many seconds your notification will continue to be retried for
+### (every retry seconds)
+###
+#EXPIRE=""
+
+##############################################################################
+### A publicly-accessible URL that our servers will send a request to when
+### the user has acknowledged your notification
+###
+#CALLBACK=""
