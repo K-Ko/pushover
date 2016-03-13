@@ -16,6 +16,7 @@ _opt_process=
 _opt_args=
 _opt_req=()
 _opt_help=
+_opt_help_app=
 _opt_help_args=
 _opt_help_args_req=
 _opt_help_hint=
@@ -41,6 +42,11 @@ __opt_help () {
 ##############################################################################
 opt_help () {
     _opt_help=$(echo "#N$1#N" | sed 's~\n~#N~g;s~\\n~#N~g')
+}
+
+##############################################################################
+opt_help_app () {
+    _opt_help_app="$1"
 }
 
 ##############################################################################
@@ -178,6 +184,7 @@ opt_build () {
     cat << EOF > $build_file
 usage () {
 [ "\$1" ] && echo && echo \$1
+[ "$_opt_help_app" ] && echo && echo $_opt_help_app
 cat << EOT
 $_opt_help
 usage: \$0 ${_opt_help_args_req}[options] ${_opt_help_args}

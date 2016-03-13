@@ -16,6 +16,7 @@ APIURL=https://api.pushover.net/1/messages.json
 [ "$CURL" ] || usage 'ERROR: Missing curl binary' 1
 
 ### Script options
+opt_help_app  "pushover "$(<$pwd/.version)
 opt_help      "Send message to pushover.net, refer to https://pushover.net/api for details"
 opt_help_args "<message ...>"
 opt_help_hint "Always the system timestamp is used"
